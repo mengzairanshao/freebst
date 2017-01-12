@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_text">
+        <item>电话归属地</item>
+        <item>历史上的今天</item>
+        <item>股票</item>
+        <item>笑话</item>
+        <item>天气</item>
+        <item>身份证查询</item>
+        <item>ip查询</item>
+        <item>NBA</item>
+        <item>万年历</item>
+        <item>汇率</item>
+        <item>书籍查询</item>
+        <item>最新电影</item>
+        <item>机器人对话</item>
+        <item>足球</item>
+        <item>黄金</item>
+        <item>电视节目表</item>
+        <item>语音识别</item>
+        <item>微信精选</item>
+        <item>全国WiFi</item>
+        <item>星座运势</item>
+        <item>周公解梦</item>
+        <item>公交车查询</item>
+        <item>词典</item>
+        <item>老黄历</item>
+        <item>驾照考库</item>
+        <item>邮编查询</item>
+    </string-array>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/weather_24_list_item_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/weather_24_item_thuan_lin"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/weather_24_item_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/weather_24_item_thuan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/weather_margin_10"
+                android:layout_width="@dimen/weather_24_list_circle_size"
+                android:layout_height="@dimen/weather_24_list_circle_size"
+                android:background="@mipmap/t_yuanhuan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/weather_24_item_rhuan_lin"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weather_24_item_rain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/weather_24_item_rhuan"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/weather_margin_10"
+                android:layout_width="@dimen/weather_24_list_circle_size"
+                android:layout_height="@dimen/weather_24_list_circle_size"
+                android:background="@mipmap/r_yuanhuan" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/horLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/weather_24_item_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

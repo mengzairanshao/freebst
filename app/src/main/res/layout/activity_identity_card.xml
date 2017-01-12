@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_identity_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.person.han.freebst.activity.identityCard">
+
+    <EditText
+        android:id="@+id/identity_card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:digits="0123456789xX"
+        android:hint="@string/identity_card_num" />
+
+    <Button
+        android:id="@+id/id_card_loss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/identity_card_num"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/is_loss" />
+
+    <Button
+        android:id="@+id/id_card_leak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/id_card_loss"
+        android:layout_alignBottom="@+id/id_card_loss"
+        android:layout_toEndOf="@+id/id_card_loss"
+        android:layout_toRightOf="@+id/id_card_loss"
+        android:text="@string/is_leak" />
+
+    <Button
+        android:id="@+id/id_card_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/id_card_loss"
+        android:layout_alignBottom="@+id/id_card_loss"
+        android:layout_toLeftOf="@id/id_card_loss"
+        android:layout_toStartOf="@id/id_card_loss"
+        android:text="@string/check" />
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_card_loss"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginEnd="@dimen/weather_margin_20"
+        android:layout_marginRight="@dimen/weather_margin_20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/which_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/weather_margin_5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/weather_margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dawn" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/day" />
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/night" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/weather_margin_5"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/weather_margin_5"
+                android:layout_marginRight="@dimen/weather_margin_5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginBottom="@dimen/weather_margin_5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dawn_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/weather_margin_5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dawn_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/weather_margin_5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dawn_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/weather_margin_5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dawn_wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginBottom="@dimen/weather_margin_5"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/dawn_wind_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/weather_margin_5"
+                android:layout_marginRight="@dimen/weather_margin_5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/day_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/day_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/day_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/day_wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/day_wind_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/weather_margin_5"
+                android:layout_marginRight="@dimen/weather_margin_5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/night_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/night_weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/night_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/night_wind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/night_wind_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/weather_margin_5" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
